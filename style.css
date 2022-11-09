@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    background: hsl(30, 38%, 92%);
+}
+
+img {
+    width: 300px;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* Typography */
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 38px;
+    margin-top: 0;
+}
+
+.item-type {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 5px;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+
+.information-container p {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 20px;
+    word-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+
+.new-price {
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 5px;
+    padding-right: 8px;
+    color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration-line: line-through;
+    color: hsl(228, 12%, 48%);
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+/* Card Container */
+
+.container-card {
+    display: flex;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+.information-container {
+    width: 300px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.price-container {
+    display: flex;
+}
+
+.icon {
+    background: url(/images/icon-cart.svg) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.addToCart-btn {
+    width: 90%;
+    padding: 16px 0 16px 0;
+    font-family: 'Montserrat', sans-serif;
+    background: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.addToCart-btn:hover {
+    cursor: pointer;
+    background-color:hsl(159, 40%, 18%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    left: 35%;
+}
+
+/* Mobile design */
+@media (max-width: 378px) {
+    .container-card {
+        display: block;
+    }
+
+    img {
+        src: url(/images/image-product-mobile.jpg);
+        border-top-left-radius: 10px;
+        width: 340px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .card-image {
+        width: 350px;
+        margin-left: 10px;
+        position: absolute;
+        
+    }
+
+    .information-container {
+        margin-left: 10px;
+        position: absolute;
+        top: 20rem;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+        height: 450px;
+    }
+
+    .price-container {
+        padding-left: 40px;
+    }
+
+    .attribution {
+        display: inline-block;
+        font-size: 10px;
+        top: 50rem;
+        left: 4rem;
+    }
+
+    .addToCart-btn {
+        margin-left: 10px;
+    }
+
+}
